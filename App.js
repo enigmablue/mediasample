@@ -118,7 +118,7 @@ const App: () => React$Node = () => {
 
                                                   require('./images/heart.png')
                                                 } />
-                                                  <Text style={{ fontSize: 14, color: '#FFF', fontFamily: 'Gilroy-Regular', marginBottom: 20, textAlign: 'center' }}>
+                                                  <Text style={{ fontSize: 14, color: '#FFF', marginBottom: 20, textAlign: 'center' }}>
                                                     {0}
                                                 </Text>
                                                 </TouchableOpacity>
@@ -127,7 +127,7 @@ const App: () => React$Node = () => {
                                                 <TouchableOpacity>
                                                     <Image resizeMode="contain" style={{ height: 32, marginBottom: 5 }}
                                                            source={require('./images/comment1.png')} />
-                                                    <Text style={{ fontSize: 14, color: '#FFF', fontFamily: 'Gilroy-Regular', marginBottom: 20, textAlign: 'center' }}>
+                                                    <Text style={{ fontSize: 14, color: '#FFF', marginBottom: 20, textAlign: 'center' }}>
                                                         { 0}
                                                     </Text>
                                                 </TouchableOpacity>
@@ -206,6 +206,14 @@ const App: () => React$Node = () => {
       onSeeking={onSeeking}
       playerState={playerState}
       progress={currentTime}
+      sliderStyle={{
+             containerStyle: {
+                alignItems: "center",
+                alignSelf: "stretch",
+                flex: 1,
+                justifyContent: "center",
+                marginBottom:-350,
+             }}}
     >
       <MediaControls.Toolbar>
         <View>
